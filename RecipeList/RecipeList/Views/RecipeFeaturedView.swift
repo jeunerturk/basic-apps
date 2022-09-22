@@ -38,6 +38,7 @@ struct RecipeFeaturedView: View {
                                         .aspectRatio(contentMode: .fill)
                                         .clipped()
                                     Text(model.recipes[index].name)
+                                        .foregroundColor(.black)
                                         .padding(5)
                                 }
                             }.frame(width: geo.size.width-40, height: geo.size.height-100, alignment: .center)
