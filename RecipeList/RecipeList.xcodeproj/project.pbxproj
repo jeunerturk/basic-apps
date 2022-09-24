@@ -19,6 +19,7 @@
 		1A5E976228DA940C0067E306 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E976128DA940C0067E306 /* RecipeModel.swift */; };
 		1A5E976428DA954B0067E306 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E976328DA954B0067E306 /* DataService.swift */; };
 		1AC137FA28DB395700A08888 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC137F928DB395700A08888 /* RecipeDetailView.swift */; };
+		1ACE224128DE8C2C0081F4A7 /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE224028DE8C2C0081F4A7 /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1A5E976128DA940C0067E306 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		1A5E976328DA954B0067E306 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1AC137F928DB395700A08888 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		1ACE224028DE8C2C0081F4A7 /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1A5E974B28DA90750067E306 /* RecipeListView.swift */,
 				1AC137F928DB395700A08888 /* RecipeDetailView.swift */,
 				1A1BAD7128DBD97C00D60CAE /* RecipeFeaturedView.swift */,
+				1ACE224028DE8C2C0081F4A7 /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				1A5E976028DA92610067E306 /* Recipe.swift in Sources */,
 				1AC137FA28DB395700A08888 /* RecipeDetailView.swift in Sources */,
+				1ACE224128DE8C2C0081F4A7 /* RecipeHighlights.swift in Sources */,
 				1A58F6B328DE6D2800C0D761 /* Rational.swift in Sources */,
 				1A5E976228DA940C0067E306 /* RecipeModel.swift in Sources */,
 				1A5E974C28DA90750067E306 /* RecipeListView.swift in Sources */,
