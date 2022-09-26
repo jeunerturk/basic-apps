@@ -52,8 +52,17 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         searchTextField.placeholder = "Search"
     }
     
-    func didUpdateWeather(weather: WeatherModel) {
-        print(weather.temperatureString)
+    func didUpdateWeather(_ weatherManager: WeatherManager ,weather: WeatherModel) {
+        DispatchQueue.main.sync {
+            temperatureLabel.text = weather.temperatureString
+            conditionImageView.image = UIImage(systemName: "\(weather.conditionName)")
+            cityLabel.text = weather.cityName
+
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
     }
     
     
