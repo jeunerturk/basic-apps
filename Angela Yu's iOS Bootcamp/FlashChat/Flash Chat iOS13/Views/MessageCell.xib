@@ -23,11 +23,19 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hUE-zD-rvr">
                                 <rect key="frame" x="10" y="10" width="315" height="50"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="48M-hv-niM">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="tintColor" red="0.3803921938" green="0.76470589639999997" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Bv-xq-kxq"/>
+                                            <constraint firstAttribute="width" constant="40" id="9zL-ku-jIg"/>
+                                        </constraints>
+                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqw-9h-sqY">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+                                        <rect key="frame" x="60" y="0.0" width="195" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK9-DY-qmH">
-                                                <rect key="frame" x="10" y="10" width="235" height="30"/>
+                                                <rect key="frame" x="10" y="10" width="175" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -41,11 +49,11 @@
                                             <constraint firstAttribute="bottom" secondItem="fK9-DY-qmH" secondAttribute="bottom" constant="10" id="zCw-jh-ikR"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="48M-hv-niM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="7hG-Oa-YZ4">
                                         <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="2Bv-xq-kxq"/>
-                                            <constraint firstAttribute="width" constant="40" id="9zL-ku-jIg"/>
+                                            <constraint firstAttribute="height" constant="40" id="2e7-tB-KnL"/>
+                                            <constraint firstAttribute="width" constant="40" id="Tnk-Au-DR2"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -69,13 +77,15 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="fK9-DY-qmH" id="RI8-CP-BMT"/>
+                <outlet property="leftImageView" destination="48M-hv-niM" id="oAo-4Y-fGW"/>
                 <outlet property="messageBubble" destination="kqw-9h-sqY" id="RX6-wL-z2a"/>
-                <outlet property="rightImageView" destination="48M-hv-niM" id="jTq-TM-CJM"/>
+                <outlet property="rightImageView" destination="7hG-Oa-YZ4" id="lkR-Sg-iGG"/>
             </connections>
             <point key="canvasLocation" x="83" y="42"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
     </resources>
 </document>
