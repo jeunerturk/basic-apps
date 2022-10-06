@@ -9,29 +9,22 @@ import UIKit
 
 class CWButton: UIButton {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configure()
+    init(backgroundColor: UIColor, title: String, image: String) {
+        super.init(frame: .zero)
+        self.configuration = .tinted()
+        self.configuration?.title = title
+        self.configuration?.baseBackgroundColor = backgroundColor
+        self.configuration?.baseForegroundColor = backgroundColor
+        self.configuration?.cornerStyle = .medium
+        translatesAutoresizingMaskIntoConstraints = false
+        self.configuration?.image = UIImage(systemName: image)
+        self.configuration?.imagePadding = 5
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(backgroundColor: UIColor, title: String) {
-        super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        setTitle(title, for: .normal)
-        configure()
-    }
+   
     
-
-    func configure() {
-        layer.cornerRadius = 8
-        titleLabel?.font = .systemFont(ofSize: 19, weight: .bold)
-        setTitleColor(.white, for: .normal)
-        translatesAutoresizingMaskIntoConstraints = false
-        
-    }
-
 }
